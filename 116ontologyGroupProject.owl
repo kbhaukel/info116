@@ -5,9 +5,122 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:schema="https://schema.org/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsObjectProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsObjectProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#affectedParty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#affectedParty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Civil_Rights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#attacker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#attacker">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#conflictArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#conflictArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#defender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#defender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#involvedParty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#involvedParty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#loaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#loaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#war -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#war">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#weaponUsed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#weaponUsed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack"/>
+    </owl:ObjectProperty>
     
 
 
@@ -26,6 +139,130 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties">
         <rdfs:domain rdf:resource="https://schema.org/NewsArticle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CityProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CityProperties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#City"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CountryProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CountryProperties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsProperties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#achievement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#achievement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Civil_Rights"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#attackYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#attackYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#AttackProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#beginningYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#beginningYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#cityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#cityName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CityProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#countryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#countryName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CountryProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#countryNationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#countryNationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CountryProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#endingYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#endingYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#eventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#eventName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#HistoricalEventsProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#year">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#CivilRightsProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Civil_Rights"/>
     </owl:DatatypeProperty>
     
 
@@ -85,6 +322,65 @@
     
 
 
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Attack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Civil_Rights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Civil_Rights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Destruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Destruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Historical_Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#War -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#War">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict"/>
+        <rdfs:comment>The waging of armed conflict against an enemy</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/NewsArticle -->
 
     <owl:Class rdf:about="https://schema.org/NewsArticle"/>
@@ -102,14 +398,68 @@
     
 
 
-    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Aftenposten -->
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Hiroshima -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Aftenposten">
-        <rdf:type rdf:resource="https://schema.org/NewsArticle"/>
-        <schema:articleBody>Blablabla</schema:articleBody>
-        <schema:headline>Knut Hareide</schema:headline>
-        <schema:sdPublisher>VG</schema:sdPublisher>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Hiroshima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#City"/>
+        <cityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hiroshima</cityName>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Holocaust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Holocaust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Destruction"/>
+        <eventName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holocaust</eventName>
+        <rdfs:comment>A horrible destruction event happening</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Country"/>
+        <countryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japan</countryName>
+        <countryNationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japanese</countryNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Kennedy_assassination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Kennedy_assassination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Destruction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#WWII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#WWII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#War"/>
+        <conflictArea rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Hiroshima"/>
+        <conflictArea rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Holocaust"/>
+        <conflictArea rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Kennedy_assassination"/>
+        <involvedParty rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Japan"/>
+        <beginningYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1939</beginningYear>
+        <endingYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1945</endingYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Conflict">
+        <rdfs:comment>An open clash between two opposing groups</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
