@@ -7,6 +7,107 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#NewsArticle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/articleBody -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/articleBody">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The actual body of the article.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/headline -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/headline">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Headline of the article.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/sdDatePublished -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/sdDatePublished">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Indicates the date on which the current structured data was generated / published. Typically used alongside sdPublisher</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/sdPublisher -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/sdPublisher">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#ArticleProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the party responsible for generating and publishing the current structured data markup, typically in cases where the structured data is derived automatically from existing published content but published on a different site. For example, student projects and open data initiatives often re-publish existing content with more explicitly structured metadata. The sdPublisher property helps make such practices more explicit.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#NewsArticle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#NewsArticle"/>
+    
+
+
+    <!-- https://schema.org/NewsArticle -->
+
+    <owl:Class rdf:about="https://schema.org/NewsArticle"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Aftenposten -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#Aftenposten">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#NewsArticle"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
