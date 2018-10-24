@@ -1,14 +1,28 @@
+|||| NEWS ARTICLE ||||
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX : <http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-9#>
+PREFIX : <http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#>
 PREFIX schema: <https://schema.org/>
-
-# Get Articles, Headlines and ArticleBody
 SELECT ?article ?headline ?body
 	WHERE {
 	 	?article rdf:type ?Article . 		#Get all articles
 		?article schema:headline ?headline . 	#Get headline for all articles
 		?article schema:articleBody ?body 	#Get article body for all articles
 	 }
+
+|||| HISTORICAL EVENT ||||
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/rhjen/ontologies/2018/9/untitled-ontology-8#>
+SELECT ?war ?conflictArea ?started ?ending ?involvedParty
+WHERE { 
+	?war rdf:type ?War . 				#Get all wars
+	?war :conflictArea ?conflictArea . 		#Get all related conflict areas
+	?war :beginningYear ?started .			#Get all starts of all wars
+	?war :endingYear ?ending .			#Get all endings of all wars
+	?war :involvedParty ?involvedParty .		#Get all involved parties of all wars
+}
